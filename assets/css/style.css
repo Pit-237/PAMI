@@ -1,10 +1,11 @@
+
 :root {
     --primary-color: #7f0303;
     --secondary-color: #04BFBF;
     --tertiary-color: #400101;
     --quaternary-color: #000000;
     --quinary-color: #560303;
-    --light-color: #f2f2f2;
+    --light-color: #ffffff;
     --medium-color: #898888;
     --dark-color: #141414;
 }
@@ -17,4 +18,7 @@
 .navbar-brand,
 .nav-link {
     color: var(--light-color);
+}
+body{
+    background-color: #000000;
 }
