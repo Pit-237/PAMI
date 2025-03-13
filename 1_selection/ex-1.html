@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container" style="justify-content: center;">
+
+    <button onclick="aplicarEstilo()" style="padding: 9px; background-color: rgb(165, 2, 2); color: aliceblue;">Aplicar Estilo</button>
+    <button onclick="dizerOla()" style="padding: 9px; background-color: rgb(165, 2, 2); color: aliceblue;">Diga Olá!</button>
+    <button onclick="Aumentarfonte()" style="padding: 9px; background-color: rgb(165, 2, 2); color: aliceblue;">Aumentar Fonte</button>
+    <button onclick="Reduzirfonte()" style="padding: 9px; background-color: rgb(165, 2, 2); color: aliceblue;">Reduzir fonte</button>
+    <button onclick="aplicarPurple()" style="padding: 9px; background-color: rgb(165, 2, 2); color: aliceblue;">Aplicar cor Purple</button>
+    <button onclick="aplicarRed()" style="padding: 9px; background-color: rgb(165, 2, 2); color: aliceblue;">Aplicar cor Red</button>
+    <button onclick="aplicarGreen()" style="padding: 9px; background-color: rgb(165, 2, 2); color: aliceblue;">Aplicar cor Green</button>
+    <button onclick="aplicarBlue()" style="padding: 9px; background-color: rgb(165, 2, 2); color: aliceblue;">Aplicar cor Blue</button>
+    <button onclick="margp()" style="padding: 9px; background-color: rgb(165, 2, 2); color: aliceblue;">Aumentar margens</button>
+    <button onclick="margm()" style="padding: 9px; background-color: rgb(165, 2, 2); color: aliceblue;">Diminuir margens</button>
+
+    </div>
+    <h1>Etec Sales Gomes</h1>
+
+    <script>
+
+        // function colorbg(){
+        // let tit = document.querySelector("h1");
+        // tit.style.backgroundColor = 'purple'
+        // }
+
+        function aplicarPurple(){
+        let tit = document.querySelector("h1");
+        tit.style.backgroundColor = 'purple'
+        }
+        function aplicarRed(){
+        let tit = document.querySelector("h1");
+        tit.style.backgroundColor = 'red'
+        }
+        function aplicarBlue(){
+        let tit = document.querySelector("h1");
+        tit.style.backgroundColor = 'Blue'
+        }
+        function aplicarGreen(){
+        let tit = document.querySelector("h1");
+        tit.style.backgroundColor = 'green'
+        }
+        
+
+
+
+        let mar_size = 10
+        console.log(marg)
+
+        function marg(){
+            tit.style.margin = `${mar_size}px`
+        }
+        function margp(){
+            mar_size = mar_size + 100
+            marg();
+        }
+        function margm(){
+            mar_size = mar_size - 100
+            marg();
+        }
+
+        let font_size = 12;
+        let tit = document.querySelector('h1')
+
+        function Aumentarfonte(){
+            font_size++;
+            // tit.style.fontSize = font_size + "px"
+            tit.style.fontSize = `${font_size}px`
+            console.log(font_size)
+        }
+
+        
+        function Reduzirfonte(){
+            font_size--;
+            tit.style.fontSize = `${font_size}px`
+            console.log(font_size)
+        }
+
+
+        function dizerOla(){
+            alert('Olá!!')
+        }
+
+
+        function aplicarEstilo(){
+        let tit = document.querySelector("h1");
+        tit.style.backgroundColor = 'red'
+        tit.style.padding = '100px'
+        tit.style.fontSize = '50px'
+        tit.style.fontFamily = 'arial'
+        tit.style.marginTop = '380px'
+        tit.style.textAlign = 'center'
+        
+        document.body.style.backgroundColor = 'black';
+        }
+
+    </script>
+
+</body>
+</html>
