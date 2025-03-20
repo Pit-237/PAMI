@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porygon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Emblema+One&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    
+
+    <script>
+
+        let segundos = 0;
+        let minutos = 0;
+        let horas = 0;
+
+        
+
+        let timer = document.createElement('h1');
+        timer.style.fontSize = '100px';
+        timer.style.fontFamily = 'Emblema One';
+        
+
+        setInterval(() => {
+            segundos++
+            if(segundos % 2 == 0){
+                document.querySelector('body').style.backgroundColor = 'brown';
+            }
+            else{
+                document.querySelector('body').style.backgroundColor = 'red';
+            }
+
+            // console.log(segundos)
+
+
+            if(segundos > 59){
+                minutos++;
+                segundos=0;
+            }
+
+            if(minutos > 59){
+                horas++;
+                minutos = 0;
+            }
+
+            timer.innerText = horas + ':' + minutos + ':' + segundos;
+
+        }, 100);
+
+
+        document.querySelector('body').appendChild(timer);
+
+    </script>
+
+
+</body>
+</html>

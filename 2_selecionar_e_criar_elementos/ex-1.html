@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecionar Elemento</title>
+</head>
+<body>
+
+    <button onclick="addVeiculo_1()">Adicionar Fusca</button>
+    <button onclick="addVeiculo_2()">Adicionar Ford K</button>
+    <button onclick="addVeiculo_3()">Adicionar Fox</button>
+    <button onclick="addVeiculo_4()">Adicionar Ferrari</button>
+    <button onclick="addVeiculo_5()">Adicionar Fiat Uno</button>
+    
+    <div id="estacionamento"></div>
+
+    <script>
+        function addVeiculo_1() {
+            let veiculo_1 = document.createElement('h1');
+            veiculo_1.innerText = 'Fusca';
+            veiculo_1.style.color = 'white';
+            veiculo_1.style.fontSize = '32px';
+            veiculo_1.style.backgroundColor = 'blue';
+            veiculo_1.style.fontFamily = 'Impact';
+    
+            
+
+            let foto = document.createElement('img')
+            foto.setAttribute('src', 'https://i0.wp.com/thegarage.com.br/wp-content/uploads/2023/12/1974-Volkswagen-Fusca-1500-azul-a-venda-for-sale-the-garage-1-of-31.jpg?ssl=1' );
+
+            document.querySelector('#estacionamento').appendChild(veiculo_1);
+            document.querySelector('#estacionamento').appendChild(foto);
+
+        }
+        function addVeiculo_2() {
+            let veiculo_2 = document.createElement('h1');
+            veiculo_2.innerText = 'Ford K';
+            veiculo_2.style.color = 'black';
+            veiculo_2.style.fontSize = '32px';
+            veiculo_2.style.backgroundColor = 'white';
+            veiculo_2.style3fontFamily = 'Impact';
+    
+            document.querySelector('#estacionamento').appendChild(veiculo_2);
+            let foto = document.createElement('img')
+            document.querySelector('#estacionamento').appendChild(foto);
+            foto.setAttribute('src', 'https://www.automoli.com/common/vehicles/_assets/img/gallery/f109/ford-ka-rbt.jpg' );
+        }
+
+        function addVeiculo_3() {
+            let veiculo_3 = document.createElement('h1');
+            veiculo_3.innerText = 'Fox';
+            veiculo_3.style.color = 'white';
+            veiculo_3.style.fontSize = '32px';
+            veiculo_3.style.backgroundColor = 'black';
+            veiculo_3.style.fontFamily = 'Impact';
+    
+            let foto = document.createElement('img')
+            foto.setAttribute('src', 'https://i0.statig.com.br/bancodeimagens/imgalta/6j/il/ds/6jildsax5014f3p8mme3b83cx.jpg' );
+
+            document.querySelector('#estacionamento').appendChild(veiculo_3);
+            document.querySelector('#estacionamento').appendChild(foto);
+        }
+
+        function addVeiculo_4() {
+            let veiculo_4 = document.createElement('h1');
+            veiculo_4.innerText = 'Ferrari';
+            veiculo_4.style.color = 'white';
+            veiculo_4.style.fontSize = '32px';
+            veiculo_4.style.backgroundColor = 'red';
+            veiculo_4.style.fontFamily = 'Impact';
+
+            let foto = document.createElement('img')
+            foto.setAttribute('src', 'https://quatrorodas.abril.com.br/wp-content/uploads/2024/05/New_Ferrari_V12_ext_06_Design_red_media-2048x1152-1-e1714757286537.webp?crop=1&resize=1080,565' );
+            
+            document.querySelector('#estacionamento').appendChild(veiculo_4);
+            document.querySelector('#estacionamento').appendChild(foto);
+            
+        }
+        function addVeiculo_5() {
+            let veiculo_5 = document.createElement('h1');
+            veiculo_5.innerText = 'Fiat Uno';
+            veiculo_5.style.color = 'white';
+            veiculo_5.style.fontSize = '32px';
+            veiculo_5.style.backgroundColor = 'brown';
+            veiculo_5.style.fontFamily = 'Impact';
+    
+            let foto = document.createElement('img')
+            foto.setAttribute('src', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmzLtysMsj8puK8TIO0jefuEi0B3t1bfSM0Q&s' );
+
+            document.querySelector('#estacionamento').appendChild(veiculo_5);
+            document.querySelector('#estacionamento').appendChild(foto);
+        }
+
+
+
+    </script>
+
+</body>
+</html>
