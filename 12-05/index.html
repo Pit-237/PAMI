@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let zoo = [
+
+        {
+            nome_animal: "Ouriço",
+            cor: "bege",
+            peso: "1kg",
+            altura:"25cm",
+            comprimento:"26cm",
+            esconder: function() {console.log("Se escondeu!")},
+            correr: function() {console.log("correu!")}
+
+        },
+
+
+        {
+            nome_animal: "Raposa",
+            cor: "Albina",
+            peso: "7kg",
+            altura:"89cm",
+            comprimento:"93cm",
+            pular: function() {console.log("Pulou!")},
+            correr: function() {console.log("correu!")}
+        },
+
+
+        {
+            nome_animal: "Galinha",
+            cor: "Branca",
+            peso: "3,5kg",
+            altura:"71cm",
+            comprimento:"49cm",
+            cacarejar: function() {console.log("Cacarejou!")},
+            correr: function() {console.log("correu!")}
+        }
+
+        
+
+        ]
+
+        zoo.forEach(animal => {
+           console.log(`N\no\nm\ne:\n ${animal.nome_animal}`) 
+           console.log(`C\no\nr: \n ${animal.cor}`) 
+           console.log('\n') 
+        })
+    </script>
+
+
+</body>
+</html>
