@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+
+    <script>
+        let acessToken={
+            email: 'horseman@gmail.com',
+            token: '8263800',
+        }
+
+        localStorage.setItem('token', JSON.stringify(acessToken))
+
+        let pessoa = {
+            nome: 'Savalo',
+            sobrenome: 'Horse',
+            idade: '15',
+            altura: '1,62',
+            peso: '79kg',
+            telefones: [
+                996060996,
+                997255191,
+                140028922,
+            ],
+        }
+
+        
+
+        localStorage.setItem('pessoa', JSON.stringify(pessoa))
+        localStorage.removeItem('token')
+        let aluno = JSON.parse(localStorage.getItem('pessoa'));
+        console.log(aluno)
+    </script>
+
+
+
+</body>
+</html>
