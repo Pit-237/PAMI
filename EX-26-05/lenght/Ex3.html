@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nome = prompt("Digite um nome: ")
+        let sobrenome = prompt("Digite um sobrenome")
+        
+        conta();
+        
+        function conta() {
+            if(nome.length<3 || sobrenome.length<3){
+                console.log(`Nome invalido, por favor, digite um nome de acordo`)
+}
+            else{
+                console.log(`Nome: ${nome}`)
+                console.log(`Sobrenome: ${sobrenome}`)
+                console.log(`Nome Completo: ${nome} ${sobrenome}`)
+
+            }
+        
+        }
+
+    </script>
+
+    
+</body>
+</html>
