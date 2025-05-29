@@ -7,16 +7,17 @@
 </head>
 <body>
     <script>
-        let number = prompt("Digite um numero de telefone: (1599999999)")
-        
+        let number = parseInt(prompt("Digite um numero de telefone: (1599999999)"))
+        number = number.length
         
         conta();
         
         function conta() {
 
-            console.log(number.split(""))
+       
 
-            if(number.length != 11  || number ){
+
+            if(number != 11 ){
                 console.log(`Numero invalido, por favor, digite um nome de acordo`)
 }
 
