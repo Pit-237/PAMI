@@ -7,8 +7,10 @@
 </head>
 <body>
 <button onclick="cronometro()">Start</button>
-<button onclick="parar()">Stop</button>
+<button onclick="stop()">Stop</button>
 <script>
+
+
     let milisegundos = 0;
     let segundos = 0;
     let minutos = 0;
@@ -38,7 +40,7 @@
     }
 
 
-    function parar() {
+    function stop() {
         clearInterval(valor);
         valor = 0
     }
