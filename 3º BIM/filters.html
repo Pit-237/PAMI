@@ -1,0 +1,147 @@
+<script>
+
+const veiculos = [
+  {
+    nome: "Toyota Corolla",
+    anoFabricacao: 2020,
+    preco: 85000,
+    modelo: "Sedan",
+    combustivel: "Gasolina"
+  },
+  {
+    nome: "Honda Civic",
+    anoFabricacao: 2019,
+    preco: 79000,
+    modelo: "Sedan",
+    combustivel: "Flex"
+  },
+  {
+    nome: "Volkswagen T-Cross",
+    anoFabricacao: 2022,
+    preco: 105000,
+    modelo: "SUV",
+    combustivel: "Gasolina"
+  },
+  {
+    nome: "Chevrolet Onix",
+    anoFabricacao: 2021,
+    preco: 68000,
+    modelo: "Hatch",
+    combustivel: "Flex"
+  },
+  {
+    nome: "Renault Kwid",
+    anoFabricacao: 2023,
+    preco: 58000,
+    modelo: "Hatch",
+    combustivel: "Flex"
+  },
+  {
+    nome: "Ford Ranger",
+    anoFabricacao: 2018,
+    preco: 130000,
+    modelo: "Picape",
+    combustivel: "Diesel"
+  },
+  {
+    nome: "Jeep Compass",
+    anoFabricacao: 2020,
+    preco: 125000,
+    modelo: "SUV",
+    combustivel: "Diesel"
+  },
+  {
+    nome: "Hyundai HB20",
+    anoFabricacao: 2022,
+    preco: 72000,
+    modelo: "Hatch",
+    combustivel: "Flex"
+  },
+  
+  {
+    nome: "Volkswagen Gol",
+    anoFabricacao: 1998,
+    preco: 12000,
+    modelo: "GL",
+    tipoCombustivel: "Gasolina"
+  },
+  {
+    nome: "Fiat Uno",
+    anoFabricacao: 1995,
+    preco: 8000,
+    modelo: "Mille",
+    tipoCombustivel: "Diesel"
+  },
+  {
+    nome: "Chevrolet Monza",
+    anoFabricacao: 1997,
+    preco: 10000,
+    modelo: "GLS",
+    tipoCombustivel: "Gasolina"
+  },
+  {
+    nome: "Ford Escort",
+    anoFabricacao: 1996,
+    preco: 9000,
+    modelo: "XR3",
+    tipoCombustivel: "Gasolina"
+  },
+
+
+  {
+    nome: "Fiat Argo",
+    anoFabricacao: 2021,
+    preco: 69000,
+    modelo: "Hatch",
+    combustivel: "Flex"
+  },
+  {
+    nome: "Nissan Kicks",
+    anoFabricacao: 2023,
+    preco: 112000,
+    modelo: "SUV",
+    combustivel: "Gasolina"
+  }
+];
+
+  let veiculos_seminovos = veiculos.filter(veiculos => veiculos.anoFabricacao > 2000 && veiculos.anoFabricacao <= 2020);
+  let veiculos_novos = veiculos.filter(veiculos => veiculos.anoFabricacao >= 2021);
+  let veiculos_classicos = veiculos.filter(veiculos => veiculos.anoFabricacao <= 2000);
+
+  let veiculos_gasolina = veiculos.filter(veiculos => veiculos.combustivel == "Gasolina")
+  let veiculos_flex = veiculos.filter(veiculos => veiculos.combustivel == "Flex")
+  let veiculos_diesel = veiculos.filter(veiculos => veiculos.combustivel == "Diesel")
+
+  let veiculos_baixo_custo = veiculos.filter(veiculos => veiculos.preco <= 30000)
+
+  console.log(veiculos_seminovos)
+
+  console.log('')
+  
+  console.log(veiculos_novos)
+
+
+  console.log('')
+
+  console.log(veiculos_classicos)
+  console.log('')
+
+  console.log(veiculos_gasolina)
+
+console.log('')
+
+console.log(veiculos_flex)
+
+console.log('')
+
+console.log(veiculos_diesel)
+
+console.log('')
+
+console.log(veiculos_baixo_custo)
+
+
+  
+
+
+</script>
